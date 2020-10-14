@@ -22,16 +22,16 @@
   <div class="container mt-5">
     <form method="post" id="update_user" name="update_user" 
     action="<?= site_url('/buyers/update') ?>">
-      <input type="hidden" name="id" id="id" value="<?php echo $user_obj['id']; ?>">
+      <input type="hidden" name="id" id="id" value="<?php echo $buyer_obj['id']; ?>">
 
       <div class="form-group">
         <label>Name</label>
-        <input type="text" name="name" class="form-control" value="<?php echo $user_obj['username']; ?>">
+        <input type="text" name="name" class="form-control" value="<?php echo $buyer_obj['username']; ?>">
       </div>
 
       <div class="form-group">
         <label>Password</label>
-        <input type="password" name="password" class="form-control" value="<?php echo $user_obj['password']; ?>">
+        <input type="password" name="password" class="form-control" value="<?php echo $buyer_obj['password']; ?>">
       </div>
 
       <div class="form-group">

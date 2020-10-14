@@ -46,7 +46,7 @@ $routes->get('masters/delete/(:num)', 'Masters::delete/$1');
 $routes->get('auctions/list', 'Auctions::index');
 $routes->get('auctions/form', 'Auctions::create');
 $routes->post('auctions/add', 'Auctions::store');
-$routes->get('auctions/edit/(:num)', 'Auctions::singleUser/$1');
+$routes->get('auctions/edit/(:num)', 'Auctions::singleAuction/$1');
 $routes->post('auctions/update', 'Auctions::update');
 $routes->get('auctions/delete/(:num)', 'Auctions::delete/$1');
 
@@ -55,7 +55,7 @@ $routes->get('auctions/delete/(:num)', 'Auctions::delete/$1');
 $routes->get('buyers/list', 'Buyers::index');
 $routes->get('buyers/form', 'Buyers::create');
 $routes->post('buyers/add', 'Buyers::store');
-$routes->get('buyers/edit/(:num)', 'Buyers::singleUser/$1');
+$routes->get('buyers/edit/(:num)', 'Buyers::singleBuyer/$1');
 $routes->post('buyers/update', 'Buyers::update');
 $routes->get('buyers/delete/(:num)', 'Buyers::delete/$1');
 /**

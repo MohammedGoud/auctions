@@ -31,7 +31,7 @@ class Auctions extends Controller
     }
 
     // show single auction
-    public function singleauction($id = null){
+    public function singleAuction($id = null){
         $AuctionModel = new AuctionModel();
         $data['auction_obj'] = $AuctionModel->where('id', $id)->first();
         return view('auctions/edit', $data);
